@@ -115,3 +115,55 @@ h4, h5 {
     text-transform: uppercase;
 
 }
+
+.boxmodel {
+
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: rgb(177, 177, 177);
+    margin: 20px;
+    background-clip: content-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 30px solid #FF5733;
+    border-style: dashed;
+
+}
+
+.cssPosi div{
+
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF5733;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.cssPosi :nth-child(1) {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.cssPosi :nth-child(2) {
+
+    position: relative;
+    top: 0;
+
+}
+
+.cssPosi :nth-child(3) {
+
+    position: fixed;
+    top: 0;
+
+}
