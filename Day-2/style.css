@@ -133,6 +133,12 @@ h4, h5 {
 
 }
 
+.cssPosi {
+
+    width: 100%;
+
+}
+
 .cssPosi div{
 
     width: 100px;
@@ -150,7 +156,7 @@ h4, h5 {
 
     position: absolute;
     right: 0;
-    top: 0;
+    top: 1500px;
 
 }
 
@@ -158,6 +164,7 @@ h4, h5 {
 
     position: relative;
     top: 0;
+    right: -100px;
 
 }
 
