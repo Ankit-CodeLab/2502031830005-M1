@@ -1,25 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | OJT Portfolio</title>
+
+  <!-- FIXED PATH -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<header>
-    <div class="logo">Projects</div>
-    <nav>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <div class="logo">
+        Ankit CodeLab
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation"
+        aria-expanded="false" aria-controls="site-nav">
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+
         <a href="../index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
         <a href="contact.html">Contact</a>
-    </nav>
-</header>
-<section class="days-section">
-    <h1>All Training Projects</h1>
-    <div class="cards">
-        <div class="card"><h3>Day 1</h3><a href="../Day-1/Basic.html">Basic</a><a href="../Day-1/Form.html">Form</a><a href="../Day-1/PR-1.html">Practice</a></div>
-        <div class="card"><h3>Day 2</h3><a href="../Day-2/index.html">Open Day 2</a></div>
-        <div class="card"><h3>Day 3</h3><a href="../Day-3/home.html">Home Page</a><a href="../Day-3/index.html">Index Page</a></div>
+
+      </nav>
+
     </div>
-</section>
+
+  </header>
+
+  <!-- PROJECTS -->
+  <section class="section section-light">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>Training Projects</h2>
+
+        <p class="lead">
+          Here you can explore my day-wise frontend training progress
+          from HTML → CSS → JavaScript → Events.
+        </p>
+
+      </div>
+
+      <div class="cards">
+
+        <!-- DAY 1 -->
+        <article class="card card-preview">
+
+          <div class="preview-top">
+            <span class="pill">Day 1</span>
+            <span class="preview-badge">HTML</span>
+          </div>
+
+          <h3>HTML Basics</h3>
+
+          <p>Forms, tables, media, semantic layout practice.</p>
+
+          <div class="preview">
+            <iframe class="preview-iframe"
+              src="../Day-1/Basic.html"
+              title="Day 1 Preview"></iframe>
+          </div>
+
+          <div class="card-links">
+            <a href="../Day-1/Basic.html">Basic</a>
+            <a href="../Day-1/Form.html">Form</a>
+            <a href="../Day-1/PR-1.html">Practice</a>
+          </div>
+
+        </article>
+
+        <!-- DAY 2 -->
+        <article class="card card-preview">
+
+          <div class="preview-top">
+            <span class="pill">Day 2</span>
+            <span class="preview-badge">CSS</span>
+          </div>
+
+          <h3>CSS Styling</h3>
+
+          <p>Layouts, flexbox, colors, spacing and UI design.</p>
+
+          <div class="preview">
+            <iframe class="preview-iframe"
+              src="../Day-2/index.html"
+              title="Day 2 Preview"></iframe>
+          </div>
+
+          <div class="card-links">
+            <a href="../Day-2/index.html">Open</a>
+          </div>
+
+        </article>
+
+        <!-- DAY 3 -->
+        <article class="card card-preview">
+
+          <div class="preview-top">
+            <span class="pill">Day 3</span>
+            <span class="preview-badge">Layout</span>
+          </div>
+
+          <h3>Web Layouts</h3>
+
+          <p>Navigation bar, homepage structure, responsive UI.</p>
+
+          <div class="preview">
+            <iframe class="preview-iframe"
+              src="../Day-3/home.html"
+              title="Day 3 Preview"></iframe>
+          </div>
+
+          <div class="card-links">
+            <a href="../Day-3/home.html">Home</a>
+            <a href="../Day-3/index.html">Index</a>
+          </div>
+
+        </article>
+
+        <!-- DAY 4 -->
+        <article class="card card-preview">
+
+          <div class="preview-top">
+            <span class="pill">Day 4</span>
+            <span class="preview-badge">JS</span>
+          </div>
+
+          <h3>JavaScript Basics</h3>
+
+          <p>Variables, DOM, functions and simple logic.</p>
+
+          <div class="preview">
+            <iframe class="preview-iframe"
+              src="../Day-4/Javascript.html"
+              title="Day 4 Preview"></iframe>
+          </div>
+
+          <div class="card-links">
+            <a href="../Day-4/Javascript.html">Open</a>
+          </div>
+
+        </article>
+
+        <!-- DAY 5 -->
+        <article class="card card-preview">
+
+          <div class="preview-top">
+            <span class="pill">Day 5</span>
+            <span class="preview-badge">JS</span>
+          </div>
+
+          <h3>JS Practice</h3>
+
+          <p>Loops, arrays, conditions and practice tasks.</p>
+
+          <div class="preview">
+            <iframe class="preview-iframe"
+              src="../Day-5/Javascript.html"
+              title="Day 5 Preview"></iframe>
+          </div>
+
+          <div class="card-links">
+            <a href="../Day-5/Javascript.html">Open</a>
+          </div>
+
+        </article>
+
+        <!-- DAY 6 -->
+        <article class="card card-preview">
+
+          <div class="preview-top">
+            <span class="pill">Day 6</span>
+            <span class="preview-badge">Forms</span>
+          </div>
+
+          <h3>Validation</h3>
+
+          <p>Form validation, regex, and functions practice.</p>
+
+          <div class="preview">
+            <iframe class="preview-iframe"
+              src="../Day-6/Javascript.html"
+              title="Day 6 Preview"></iframe>
+          </div>
+
+          <div class="card-links">
+            <a href="../Day-6/Javascript.html">Open</a>
+          </div>
+
+        </article>
+
+        <!-- DAY 7 -->
+        <article class="card card-preview">
+
+          <div class="preview-top">
+            <span class="pill">Day 7</span>
+            <span class="preview-badge">Events</span>
+          </div>
+
+          <h3>Event Handling</h3>
+
+          <p>Mouse events, keyboard events and interactions.</p>
+
+          <div class="preview">
+            <iframe class="preview-iframe"
+              src="../Day-7/MouseEvents.html"
+              title="Day 7 Preview"></iframe>
+          </div>
+
+          <div class="card-links">
+            <a href="../Day-7/MouseEvents.html">Mouse</a>
+            <a href="../Day-7/FormValidation.html">Form</a>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+      <p>© 2026 OJT Portfolio | Ankit CodeLab</p>
+      <p class="muted">Built using HTML, CSS & JavaScript</p>
+    </div>
+
+  </footer>
+
 </body>
 </html>

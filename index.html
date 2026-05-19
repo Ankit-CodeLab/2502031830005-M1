@@ -1,51 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training Portfolio</title>
-    <link rel="stylesheet" href="Assets/style.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>OJT Portfolio | Ankit CodeLab</title>
+
+  <link rel="stylesheet" href="Assets/style.css" />
+
 </head>
+
 <body>
-    <header>
-        <div class="logo">My Training Portfolio</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="Assets/about.html">About</a>
-            <a href="Assets/projects.html">Projects</a>
-            <a href="Assets/contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome To My Training Journey</h1>
-            <p>This website showcases all my daily training tasks, mini projects, practice files, and web development learning progress.</p>
-            <a href="Assets/projects.html" class="btn">Explore Projects</a>
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <div class="logo">
+        Ankit CodeLab
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+
+        <a href="index.html" class="active">
+          Home
+        </a>
+
+        <a href="Assets/about.html">
+          About
+        </a>
+
+        <a href="Assets/projects.html">
+          Projects
+        </a>
+
+        <a href="Assets/contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section
+    class="hero section-dark"
+    aria-labelledby="hero-title"
+  >
+
+    <div class="container hero-content">
+
+      <div class="hero-text">
+
+        <h1 id="hero-title">
+          OJT Portfolio
+        </h1>
+
+        <p>
+          This portfolio showcases my frontend development
+          learning journey, daily practice tasks,
+          mini projects, and responsive web design work
+          using HTML, CSS, and JavaScript.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            href="Assets/projects.html"
+            class="btn btn-primary"
+          >
+            View Projects
+          </a>
+
+          <a
+            href="Assets/about.html"
+            class="btn btn-ghost"
+          >
+            About Me
+          </a>
+
         </div>
-    </section>
 
-    <section class="about-preview">
-        <h2>About My Training</h2>
-        <p>I am currently learning HTML, CSS, and web development concepts. Every day I work on new projects and improve my frontend development skills.</p>
-        <div class="about-cards">
-            <div class="small-card"><h3>HTML</h3><p>Structure of webpages and semantic tags.</p></div>
-            <div class="small-card"><h3>CSS</h3><p>Layouts, colors, responsive design, and animations.</p></div>
-            <div class="small-card"><h3>Projects</h3><p>Hands-on projects created during training.</p></div>
+      </div>
+
+      <div
+        class="hero-stats"
+        role="list"
+        aria-label="Skills"
+      >
+
+        <div class="stat" role="listitem">
+
+          <div class="stat-value">
+            HTML5
+          </div>
+
+          <div class="stat-label">
+            Semantic Structure
+          </div>
+
         </div>
-    </section>
 
-    <section class="days-section">
-        <h2>Day Wise Projects</h2>
-        <div class="cards">
-            <div class="card"><h3>Day 1</h3><p>Basic HTML pages, forms, multimedia, and practice projects.</p><a href="Day-1/Basic.html">Basic</a><a href="Day-1/Form.html">Form</a><a href="Day-1/PR-1.html">Practice</a></div>
-            <div class="card"><h3>Day 2</h3><p>CSS styling, layouts, colors, and responsive concepts.</p><a href="Day-2/index.html">Open Day 2</a></div>
-            <div class="card"><h3>Day 3</h3><p>Advanced webpage layouts, navigation bars, and homepage designs.</p><a href="Day-3/home.html">Home Page</a><a href="Day-3/index.html">Index Page</a></div>
+        <div class="stat" role="listitem">
+
+          <div class="stat-value">
+            CSS3
+          </div>
+
+          <div class="stat-label">
+            Responsive Design
+          </div>
+
         </div>
-    </section>
 
-    <footer>
-        <p>© 2026 My Training Portfolio | Designed By Ankit-CodeLab</p>
-    </footer>
+        <div class="stat" role="listitem">
+
+          <div class="stat-value">
+            JavaScript
+          </div>
+
+          <div class="stat-label">
+            Basic Interactivity
+          </div>
+
+        </div>
+
+        <div class="stat" role="listitem">
+
+          <div class="stat-value">
+            Mini Projects
+          </div>
+
+          <div class="stat-label">
+            Daily Practice
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section
+    class="section section-light"
+    aria-labelledby="about-title"
+  >
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2 id="about-title">
+          About My Learning Journey
+        </h2>
+
+        <p class="lead">
+          I am learning frontend web development by building
+          practical projects every day. My goal is to create
+          clean, responsive, and user-friendly websites
+          with modern UI design.
+        </p>
+
+        <p class="lead">
+          This portfolio highlights my daily progress,
+          practice work, and mini projects that improve
+          my coding, layout, and design skills step-by-step.
+        </p>
+
+      </div>
+
+      <div class="about-cards">
+
+        <article class="small-card">
+
+          <h3>
+            HTML
+          </h3>
+
+          <p>
+            Learning semantic webpage structure,
+            forms, multimedia elements,
+            and accessibility-friendly layouts.
+          </p>
+
+          <p class="muted">
+            Focus: clean structure and better organization.
+          </p>
+
+        </article>
+
+        <article class="small-card">
+
+          <h3>
+            CSS
+          </h3>
+
+          <p>
+            Practicing responsive layouts,
+            flexbox, grid systems, typography,
+            spacing, colors, and reusable UI components.
+          </p>
+
+          <p class="muted">
+            Focus: responsive UI and modern styling.
+          </p>
+
+        </article>
+
+        <article class="small-card">
+
+          <h3>
+            Projects
+          </h3>
+
+          <p>
+            Building mini projects and daily training tasks
+            to apply frontend concepts in practical webpages.
+          </p>
+
+          <p class="muted">
+            Focus: usability, layout, and UI refinement.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+<section
+  class="section section-alt"
+  aria-labelledby="projects-title"
+>
+
+  <div class="container">
+
+    <!-- SECTION HEAD -->
+    <div class="section-head">
+
+      <h2 id="projects-title">
+        Featured Training Projects
+      </h2>
+
+      <p class="lead">
+        Explore some of my recent frontend practice work,
+        mini projects, and responsive webpage designs.
+      </p>
+
+    </div>
+
+    <!-- PROJECT CARDS -->
+    <div class="cards">
+
+      <!-- DAY 1 -->
+      <article
+        class="card card-preview"
+        aria-label="Day 1 Projects"
+      >
+
+        <div class="preview-top">
+
+          <span class="pill">
+            Day 1
+          </span>
+
+          <span class="preview-badge">
+            HTML
+          </span>
+
+        </div>
+
+        <h3>
+          HTML Basics
+        </h3>
+
+        <p>
+          Basic webpage structure, semantic HTML,
+          forms, multimedia handling,
+          and beginner practice projects.
+        </p>
+
+        <div class="preview">
+
+          <iframe
+            class="preview-iframe"
+            src="Day-1/Basic.html"
+            title="Day 1 Preview"
+          >
+          </iframe>
+
+        </div>
+
+        <div class="card-links">
+
+          <a href="Day-1/Basic.html">
+            Basic
+          </a>
+
+          <a href="Day-1/Form.html">
+            Form
+          </a>
+
+          <a href="Day-1/PR-1.html">
+            Practice
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- DAY 2 -->
+      <article
+        class="card card-preview"
+        aria-label="Day 2 Projects"
+      >
+
+        <div class="preview-top">
+
+          <span class="pill">
+            Day 2
+          </span>
+
+          <span class="preview-badge">
+            CSS
+          </span>
+
+        </div>
+
+        <h3>
+          CSS Styling
+        </h3>
+
+        <p>
+          Responsive layouts, typography,
+          spacing systems, colors,
+          and modern UI design concepts.
+        </p>
+
+        <div class="preview">
+
+          <iframe
+            class="preview-iframe"
+            src="Day-2/index.html"
+            title="Day 2 Preview"
+          >
+          </iframe>
+
+        </div>
+
+        <div class="card-links">
+
+          <a href="Day-2/index.html">
+            Open Project
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- DAY 3 -->
+      <article
+        class="card card-preview"
+        aria-label="Day 3 Projects"
+      >
+
+        <div class="preview-top">
+
+          <span class="pill">
+            Day 3
+          </span>
+
+          <span class="preview-badge">
+            Layout
+          </span>
+
+        </div>
+
+        <h3>
+          Website Layouts
+        </h3>
+
+        <p>
+          Navigation bars, homepage layouts,
+          responsive sections,
+          and UI alignment improvements.
+        </p>
+
+        <div class="preview">
+
+          <iframe
+            class="preview-iframe"
+            src="Day-3/home.html"
+            title="Day 3 Preview"
+          >
+          </iframe>
+
+        </div>
+
+        <div class="card-links">
+
+          <a href="Day-3/home.html">
+            Home Page
+          </a>
+
+          <a href="Day-3/index.html">
+            Index Page
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+    <!-- VIEW MORE -->
+    <div class="view-more-wrap">
+
+      <a
+        href="Assets/projects.html"
+        class="btn btn-primary"
+      >
+        View More Projects
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 OJT Portfolio | Designed by Ankit CodeLab
+      </p>
+
+      <p class="muted">
+        Built using HTML, CSS, and JavaScript.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- JS -->
+  <script>
+
+    (function () {
+
+      const toggle =
+        document.querySelector(".nav-toggle");
+
+      const nav =
+        document.querySelector("#site-nav");
+
+      if (!toggle || !nav) return;
+
+      toggle.addEventListener("click", () => {
+
+        const expanded =
+          toggle.getAttribute("aria-expanded") === "true";
+
+        toggle.setAttribute(
+          "aria-expanded",
+          String(!expanded)
+        );
+
+        nav.classList.toggle("open");
+
+      });
+
+    })();
+
+  </script>
+
 </body>
 </html>

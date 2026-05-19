@@ -1,22 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About</title>
-    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About | OJT Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
-<header>
-    <div class="logo">About Me</div>
-    <nav>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <div class="logo">
+        Ankit CodeLab
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+
         <a href="../index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-<section class="page">
-    <h1>About My Training</h1>
-    <p>I am learning frontend web development. During this training I completed multiple tasks using HTML and CSS.</p>
-    <p>My goal is to become a professional full stack developer and build modern responsive websites.</p>
-</section>
+
+        <a href="about.html" class="active">
+          About
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section section-light">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>
+          What I Am Learning
+        </h2>
+
+        <p class="lead">
+          Every day I improve my frontend development skills
+          by practicing layouts, UI design, responsiveness,
+          and clean coding techniques.
+        </p>
+
+      </div>
+
+      <div class="about-cards">
+
+        <article class="small-card">
+
+          <h3>
+            Semantic HTML
+          </h3>
+
+          <p>
+            Learning proper webpage structure using semantic
+            HTML elements like header, nav, section,
+            article, footer, and forms.
+          </p>
+
+          <p class="muted">
+            Focus: clean markup and accessibility.
+          </p>
+
+        </article>
+
+        <article class="small-card">
+
+          <h3>
+            Modern CSS
+          </h3>
+
+          <p>
+            Practicing responsive design using flexbox,
+            grid systems, spacing, typography,
+            animations, and reusable UI components.
+          </p>
+
+          <p class="muted">
+            Focus: responsive layouts and UI consistency.
+          </p>
+
+        </article>
+
+        <article class="small-card">
+
+          <h3>
+            JavaScript Basics
+          </h3>
+
+          <p>
+            Learning JavaScript fundamentals such as
+            DOM manipulation, event handling,
+            navigation toggles, and interactivity.
+          </p>
+
+          <p class="muted">
+            Focus: interactive user experience.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GOALS -->
+  <section class="section section-alt">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>
+          My Goals
+        </h2>
+
+        <p class="lead">
+          My long-term goal is to become a professional
+          full-stack web developer and create modern
+          digital experiences for users.
+        </p>
+
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+
+          <h3>
+            Improve UI Design
+          </h3>
+
+          <p>
+            Build visually appealing websites with
+            better layouts, typography, and spacing.
+          </p>
+
+        </article>
+
+        <article class="card">
+
+          <h3>
+            Learn Advanced JavaScript
+          </h3>
+
+          <p>
+            Continue improving frontend interactivity,
+            animations, and dynamic webpage behavior.
+          </p>
+
+        </article>
+
+        <article class="card">
+
+          <h3>
+            Build Real Projects
+          </h3>
+
+          <p>
+            Create practical projects that strengthen
+            development skills and portfolio quality.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 OJT Portfolio | Designed by Ankit CodeLab
+      </p>
+
+      <p class="muted">
+        Built using HTML, CSS, and JavaScript.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
