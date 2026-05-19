@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- All visible elements must sit inside the body -->
+    <p id="demo"></p>
+   
+    <input type="text" name="my text" value="Hello World!">
+   
+    <!-- Added a button to actually trigger your function -->
+    <button onclick="myfunction()">Click Me</button>
+     
+
+     <form name="myForm">
+        <input type="text" name="uname">
+        <input type="text" name="pword" >
+        <input type="button" onclick="A()">
+       </form>
+<label for="mText">Enter Email:</label>
+    <input type="text" id="mText" placeholder="example@email.com">
+   
+    <!-- Clicking this button runs your checkmail() function -->
+    <button onclick="checkmail()">Validate Email</button>
+    <script>
+        // 1. MATH FUNCTIONS
+        document.writeln("E: " + Math.E + "<br>");
+
+        var a = Math.pow(2, 3);
+        document.writeln("2^3: " + a + "<br>");
+
+        var num = Math.random();
+        document.writeln("Random 0-1: " + num + "<br>");
+       
+        // Fixed: Use Math.floor instead of parseInt for random numbers
+        var num2 = Math.floor(1 + (Math.random() * 100));
+        document.writeln("Random 1-100: " + num2 + "<br>");
+
+        document.writeln("Ceil 2.7: " + Math.ceil(2.7) + "<br>");
+        document.writeln("Floor 2.7: " + Math.floor(2.7) + "<br>");
+        document.writeln("Round 2.7: " + Math.round(2.7) + "<br><br>");
+
+        // 2. DATE AND TIME
+        const d = new Date();
+        document.getElementById("demo").innerHTML = "Current Date: " + d;
+
+        // 3. OBJECT LITERAL NOTATION (Commented out but fixed)
+        /*
+        var person = {
+            firstname: "sandip",
+            lastname: "patel",
+            sayHi: function() {
+                alert("hi! " + this.firstname + " " + this.lastname);
+            }
+        };
+        */
+
+        // 4. GET ELEMENT BY NAME FUNCTION
+        function myfunction() {
+            // FIXED: plural "getElementsByName" and proper array [0] indexing
+            var element = document.getElementsByName("my text")[0];
+            console.log(element.value);
+       
+
+           
+        }
+     
+         
+         //forms
+         
+         function A() {
+            var a=document.forms["myForm"];
+            var u=a.uname.value;
+            var p=a.pword.value;
+            if(u=="admin" &&p=="123")
+           {
+            alert("valid");
+           }
+            else
+           {
+            alert("invalid")
+           }
+        }
+
+      //validatiopn using regexp
+
+       
+        function checkmail() {
+         
+            var a = document.getElementById("mText").value;
+           
+     
+            var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+           
+            // Test the input value against the regex
+            if (regex.test(a)) {
+                alert("Valid Email Address!");
+            } else {
+                alert("Invalid Email Address!");
+            }
+        }
+           
+ 
+    </script>
+</body>
+</html>
