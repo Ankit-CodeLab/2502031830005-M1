@@ -2,6 +2,7 @@ import Hello from './Hello.jsx'
 import reactLogo from './assets/react.svg'
 import Bye from './Bye.jsx'
 import './App.css'
+import Propex from './Propex.jsx'
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
       <Bye />
       <img src={reactLogo} />
       <Hello />
+
+      <Propex name="Something" age="19" city="AMD"/>
     </>
   )
 }
