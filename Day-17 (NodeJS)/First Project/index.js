@@ -2,22 +2,37 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('<h2> Hello World! </h2>');
+
+    const users = [
+
+        {id:1,name:"Ankit"},
+        {id:3,name:"Ankit"}
+
+    ]
+
+    res.json(users);
+
 });
 
-app.get('/about/:userid-:bookid', (req, res) => {
-  res.send("Book ID: " + req.params.bookid);
+app.set('view engine','ejs')
+
+app.get('/about', (req, res) => {
+
+    res.redirect('..'); 
+
 });
 
-app.get('/search', (req, res) => {
+app.get('/user', (req, res) => {
 
-    const name = req.query.name
-    const age = req.query.age
-
-  res.send(`<h2> Name: ${name}, Age: ${age}</h2>`);
+    res.render('user')
 });
 
-app.listen(3000,() => {
+app.get('/download', (req, res) => {
+
+    res.download('./Files/HTML5_Logo.svg', 'HTML.svg')
+});
+
+app.listen(3000, () => {
 
     console.log("Successfully Connected on port 3000.")
 
